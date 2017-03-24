@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F70BCD631E83A46000E2B65E /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F70BCD621E83A46000E2B65E /* UIView+Category.m */; };
+		F70BCD661E83A47700E2B65E /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F70BCD651E83A47700E2B65E /* UIButton+Category.m */; };
 		F77757581E6E98A300C98797 /* OSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77757571E6E98A300C98797 /* OSKitTests.m */; };
 		F77757631E6E98A300C98797 /* OSKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77757621E6E98A300C98797 /* OSKitUITests.m */; };
 		F797E6A61E6EA043007B02DF /* OSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F797E69D1E6EA043007B02DF /* OSAppDelegate.m */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F70BCD611E83A46000E2B65E /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		F70BCD621E83A46000E2B65E /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		F70BCD641E83A47700E2B65E /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
+		F70BCD651E83A47700E2B65E /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
 		F777573A1E6E98A300C98797 /* OSKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77757531E6E98A300C98797 /* OSKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77757571E6E98A300C98797 /* OSKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSKitTests.m; sourceTree = "<group>"; };
@@ -75,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F70BCD5F1E83A44C00E2B65E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F70BCD601E83A44C00E2B65E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F70BCD611E83A46000E2B65E /* UIView+Category.h */,
+				F70BCD621E83A46000E2B65E /* UIView+Category.m */,
+				F70BCD641E83A47700E2B65E /* UIButton+Category.h */,
+				F70BCD651E83A47700E2B65E /* UIButton+Category.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		F77757311E6E98A200C98797 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +212,8 @@
 		F797E6B11E6EA2A0007B02DF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F70BCD5F1E83A44C00E2B65E /* Foundation */,
+				F70BCD601E83A44C00E2B65E /* UIKit */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -335,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F797E6AB1E6EA043007B02DF /* main.m in Sources */,
+				F70BCD661E83A47700E2B65E /* UIButton+Category.m in Sources */,
+				F70BCD631E83A46000E2B65E /* UIView+Category.m in Sources */,
 				F797E6A61E6EA043007B02DF /* OSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
