@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSUInteger, OSButtonImagePosition) {
     OSButtonImagePositionLeft,
     OSButtonImagePositionTop,
@@ -32,116 +34,118 @@ typedef NS_ENUM(NSUInteger, OSButtonImagePosition) {
 @interface UIButton (_Shortcut)
 
 /// Shortcut for title for 'UIControlStateNormal'.
-@property (nonatomic, strong) NSString *normalTitle;
+@property (nullable, nonatomic, strong) NSString *normalTitle;
 
 /// Shortcut for title for 'UIControlStateHighlighted'.
-@property (nonatomic, strong) NSString *highlightedTitle;
+@property (nullable, nonatomic, strong) NSString *highlightedTitle;
 
 /// Shortcut for title for 'UIControlStateDisabled'.
-@property (nonatomic, strong) NSString *disabledTitle;
+@property (nullable, nonatomic, strong) NSString *disabledTitle;
 
 /// Shortcut for title for 'UIControlStateSelected'.
-@property (nonatomic, strong) NSString *selectedTitle;
+@property (nullable, nonatomic, strong) NSString *selectedTitle;
 
 /// Shortcut for title for 'UIControlStateSelected|UIControlStateHighlighted'.
-@property (nonatomic, strong) NSString *selectedHighlightedTitle;
+@property (nullable, nonatomic, strong) NSString *selectedHighlightedTitle;
 
 /// Shortcut for title for 'UIControlStateSelected|UIControlStateDisabled'.
-@property (nonatomic, strong) NSString *selectedDisabledTitle;
+@property (nullable, nonatomic, strong) NSString *selectedDisabledTitle;
 
 
 /// Shortcut for title color for 'UIControlStateNormal'.
-@property (nonatomic, strong) UIColor *normalTitleColor;
+@property (nullable, nonatomic, strong) UIColor *normalTitleColor;
 
 /// Shortcut for title color for 'UIControlStateHighlighted'.
-@property (nonatomic, strong) UIColor *highlightedTitleColor;
+@property (nullable, nonatomic, strong) UIColor *highlightedTitleColor;
 
 /// Shortcut for title color for 'UIControlStateDisabled'.
-@property (nonatomic, strong) UIColor *disabledTitleColor;
+@property (nullable, nonatomic, strong) UIColor *disabledTitleColor;
 
 /// Shortcut for title color for 'UIControlStateSelected'.
-@property (nonatomic, strong) UIColor *selectedTitleColor;
+@property (nullable, nonatomic, strong) UIColor *selectedTitleColor;
 
 /// Shortcut for title color for 'UIControlStateSelected|UIControlStateHighlighted'.
-@property (nonatomic, strong) UIColor *selectedHighlightedTitleColor;
+@property (nullable, nonatomic, strong) UIColor *selectedHighlightedTitleColor;
 
 /// Shortcut for title color for 'UIControlStateSelected|UIControlStateDisabled'.
-@property (nonatomic, strong) UIColor *selectedDisabledTitleColor;
+@property (nullable, nonatomic, strong) UIColor *selectedDisabledTitleColor;
 
 
 /// Shortcut for title shadow color for 'UIControlStateNormal'.
-@property (nonatomic, strong) UIColor *normalTitleShadowColor;
+@property (nullable, nonatomic, strong) UIColor *normalTitleShadowColor;
 
 /// Shortcut for title shadow color for 'UIControlStateHighlighted'.
-@property (nonatomic, strong) UIColor *highlightedTitleShadowColor;
+@property (nullable, nonatomic, strong) UIColor *highlightedTitleShadowColor;
 
 /// Shortcut for title shadow color for 'UIControlStateDisabled'.
-@property (nonatomic, strong) UIColor *disabledTitleShadowColor;
+@property (nullable, nonatomic, strong) UIColor *disabledTitleShadowColor;
 
 /// Shortcut for title shadow color for 'UIControlStateSelected'.
-@property (nonatomic, strong) UIColor *selectedTitleShadowColor;
+@property (nullable, nonatomic, strong) UIColor *selectedTitleShadowColor;
 
 /// Shortcut for title shadow color for 'UIControlStateSelected|UIControlStateHighlighted'.
-@property (nonatomic, strong) UIColor *selectedHighlightedTitleShadowColor;
+@property (nullable, nonatomic, strong) UIColor *selectedHighlightedTitleShadowColor;
 
 /// Shortcut for title shadow color for 'UIControlStateSelected|UIControlStateDisabled'.
-@property (nonatomic, strong) UIColor *selectedDisabledTitleShadowColor;
+@property (nullable, nonatomic, strong) UIColor *selectedDisabledTitleShadowColor;
 
 
 /// Shortcut for image for 'UIControlStateNormal'.
-@property (nonatomic, strong) UIImage *normalImage;
+@property (nullable, nonatomic, strong) UIImage *normalImage;
 
 /// Shortcut for image for 'UIControlStateHighlighted'.
-@property (nonatomic, strong) UIImage *highlightedImage;
+@property (nullable, nonatomic, strong) UIImage *highlightedImage;
 
 /// Shortcut for image for 'UIControlStateDisabled'.
-@property (nonatomic, strong) UIImage *disabledImage;
+@property (nullable, nonatomic, strong) UIImage *disabledImage;
 
 /// Shortcut for image for 'UIControlStateSelected'.
-@property (nonatomic, strong) UIImage *selectedImage;
+@property (nullable, nonatomic, strong) UIImage *selectedImage;
 
 /// Shortcut for image for 'UIControlStateSelected|UIControlStateHighlighted'.
-@property (nonatomic, strong) UIImage *selectedHighlightedImage;
+@property (nullable, nonatomic, strong) UIImage *selectedHighlightedImage;
 
 /// Shortcut for image for 'UIControlStateSelected|UIControlStateDisabled'.
-@property (nonatomic, strong) UIImage *selectedDisabledImage;
+@property (nullable, nonatomic, strong) UIImage *selectedDisabledImage;
 
 
 /// Shortcut for background image for 'UIControlStateNormal'.
-@property (nonatomic, strong) UIImage *normalBackgroundImage;
+@property (nullable, nonatomic, strong) UIImage *normalBackgroundImage;
 
 /// Shortcut for background image for 'UIControlStateHighlighted'.
-@property (nonatomic, strong) UIImage *highlightedBackgroundImage;
+@property (nullable, nonatomic, strong) UIImage *highlightedBackgroundImage;
 
 /// Shortcut for background image for 'UIControlStateDisabled'.
-@property (nonatomic, strong) UIImage *disabledBackgroundImage;
+@property (nullable, nonatomic, strong) UIImage *disabledBackgroundImage;
 
 /// Shortcut for background image for 'UIControlStateSelected'.
-@property (nonatomic, strong) UIImage *selectedBackgroundImage;
+@property (nullable, nonatomic, strong) UIImage *selectedBackgroundImage;
 
 /// Shortcut for background image for 'UIControlStateSelected|UIControlStateHighlighted'.
-@property (nonatomic, strong) UIImage *selectedHighlightedBackgroundImage;
+@property (nullable, nonatomic, strong) UIImage *selectedHighlightedBackgroundImage;
 
 /// Shortcut for background image for 'UIControlStateSelected|UIControlStateDisabled'.
-@property (nonatomic, strong) UIImage *selectedDisabledBackgroundImage;
+@property (nullable, nonatomic, strong) UIImage *selectedDisabledBackgroundImage;
 
 
 /// Shortcut for attributed title for 'UIControlStateNormal'.
-@property (nonatomic, strong) NSAttributedString *normalAttributedTitle;
+@property (nullable, nonatomic, strong) NSAttributedString *normalAttributedTitle;
 
 /// Shortcut for attributed title for 'UIControlStateHighlighted'.
-@property (nonatomic, strong) NSAttributedString *highlightedAttributedTitle;
+@property (nullable, nonatomic, strong) NSAttributedString *highlightedAttributedTitle;
 
 /// Shortcut for attributed title for 'UIControlStateDisabled'.
-@property (nonatomic, strong) NSAttributedString *disabledAttributedTitle;
+@property (nullable, nonatomic, strong) NSAttributedString *disabledAttributedTitle;
 
 /// Shortcut for attributed title for 'UIControlStateSelected'.
-@property (nonatomic, strong) NSAttributedString *selectedAttributedTitle;
+@property (nullable, nonatomic, strong) NSAttributedString *selectedAttributedTitle;
 
 /// Shortcut for attributed title for 'UIControlStateSelected|UIControlStateHighlighted'.
-@property (nonatomic, strong) NSAttributedString *selectedHighlightedAttributedTitle;
+@property (nullable, nonatomic, strong) NSAttributedString *selectedHighlightedAttributedTitle;
 
 /// Shortcut for attributed title for 'UIControlStateSelected|UIControlStateDisabled'.
-@property (nonatomic, strong) NSAttributedString *selectedDisabledAttributedTitle;
+@property (nullable, nonatomic, strong) NSAttributedString *selectedDisabledAttributedTitle;
 
 @end
+
+NS_ASSUME_NONNULL_END
